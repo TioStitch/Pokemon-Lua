@@ -29,3 +29,4 @@ com você e ter uma lógica melhor para os ataques.
 - https://br.pinterest.com/suis3i/ - **Selection System**
 - https://www.pinterest.com/freebiesupply/ **Transparent Pokemon Logo**
 - https://commons.wikimedia.org/wiki/File:Lua-Logo.svg **Lua language logo**
+- http://pokemonadvancer.blogspot.com/2012/01/o-reino-do-pikachu.html **Pikachu png**
