@@ -10,3 +10,4 @@
 > Escolha entre um dos 3 ataques inicias, dos quais
 > o programador pode personalizar da forma que quiser,
 > sua oponente irá escolher um ataque em resposta.
+![image](https://imgur.com/i5E93C9.png)
