@@ -24,3 +24,8 @@ com você e ter uma lógica melhor para os ataques.
 <p align="center">
   <img src=https://imgur.com/i5E93C9.png/>
 </p>
+
+**Crédito das imagens - Credits**
+- https://br.pinterest.com/suis3i/ - **Selection System**
+- https://www.pinterest.com/freebiesupply/ **Transparent Pokemon Logo**
+- https://commons.wikimedia.org/wiki/File:Lua-Logo.svg **Lua language logo**
