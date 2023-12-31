@@ -14,5 +14,5 @@ O sistema coloca um inicial de contra tipo para batalhar
 com você e ter uma lógica melhor para os ataques.
 
 <p align="center">
-![image](https://imgur.com/i5E93C9.png)
+  <img src=https://imgur.com/i5E93C9.png/>
 </p>
