@@ -6,6 +6,14 @@
 > escolha o seu pokémon inicial e batalhe contra uma oponente
 > com ataques aleatórios.*
 
+**Sistema de Seleção inicial - Selection System**
+Escolha entre um dos 3 pokémons iniciais que irão acompanhar
+você em sua jornada e principalmente, acompanhar você em sua
+batalha contra a oponente padrão, ela terá de ser derrotada com
+os ataques do seu pokémon.
+![image](https://imgur.com/I5voMj0.png)
+
+
 **Sistema de Batalhas - Battle System**
 Escolha entre um dos 3 ataques inicias, dos quais
 o programador pode personalizar da forma que quiser,
