@@ -22,26 +22,4 @@ function squirtle:atacar(playerPokemon, ataque)
     end
 end
 
-function squirtle:getAttackName(ataque)
-    if ataque == 1 then
-        return squirtle.primeiro_ataque
-    elseif ataque == 2 then
-        return squirtle.segundo_ataque
-    elseif ataque == 3 then
-        return squirtle.terceiro_ataque
-    end
-    return ""
-end
-
-function squirtle:getAttackDamage(ataque)
-    if ataque == 1 then
-        return squirtle.primeiro_ataque_dano
-    elseif ataque == 2 then
-        return squirtle.segundo_ataque_dano
-    elseif ataque == 3 then
-        return squirtle.terceiro_ataque_dano
-    end
-    return 10
-end
-
 return squirtle

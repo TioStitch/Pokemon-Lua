@@ -23,26 +23,4 @@ function charmander:atacar(playerPokemon, ataque)
     return playerPokemon
 end
 
-function charmander:getAttackName(ataque)
-    if ataque == 1 then
-        return charmander.primeiro_ataque
-    elseif ataque == 2 then
-        return charmander.segundo_ataque
-    elseif ataque == 3 then
-        return charmander.terceiro_ataque
-    end
-    return ""
-end
-
-function charmander:getAttackDamage(ataque)
-    if ataque == 1 then
-        return charmander.primeiro_ataque_dano
-    elseif ataque == 2 then
-        return charmander.segundo_ataque_dano
-    elseif ataque == 3 then
-        return charmander.terceiro_ataque_dano
-    end
-    return 10
-end
-
 return charmander

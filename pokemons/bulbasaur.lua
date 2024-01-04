@@ -22,26 +22,4 @@ function bulbasaur:atacar(playerPokemon, ataque)
     end
 end
 
-function bulbasaur:getAttackName(ataque)
-    if ataque == 1 then
-        return bulbasaur.primeiro_ataque
-    elseif ataque == 2 then
-        return bulbasaur.segundo_ataque
-    elseif ataque == 3 then
-        return bulbasaur.terceiro_ataque
-    end
-    return ""
-end
-
-function bulbasaur:getAttackDamage(ataque)
-    if ataque == 1 then
-        return bulbasaur.primeiro_ataque_dano
-    elseif ataque == 2 then
-        return bulbasaur.segundo_ataque_dano
-    elseif ataque == 3 then
-        return bulbasaur.terceiro_ataque_dano
-    end
-    return 10
-end
-
 return bulbasaur

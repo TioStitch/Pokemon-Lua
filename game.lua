@@ -70,20 +70,22 @@ function game:startBattle()
     print(AMY_PREFIXO .. ENEMY_POKEMON.nome .. " eu escolho voce!")
     stringUtils:toNextTime()
 
-    game:fighting(PLAYER_POKEMON, ENEMY_POKEMON)
+    game:fighting(players:getPlayerPokemon(), players:getEnemyPokemon())
 end
 
 function game:fighting(playerPokemon, enemyPokemon)
 
     ::REBBATLE::
-    if manager:checkBattle(AMY_PREFIXO, playerPokemon, enemyPokemon) == false then
+    if manager:checkBattle(AMY_PREFIXO, playerPokemon, enemyPokemon) == true then
+        return;
+    end
 
     if playerRound == true then
         stringUtils:generateWindow(false, playerPokemon, enemyPokemon)
 
         local attack = tonumber(io.read())
-        local attackUsed = playerPokemon:getAttackName(attack)
-        local attackDamage = playerPokemon:getAttackDamage(attack)
+        local attackUsed = manager:getAttackName(playerPokemon, attack)
+        local attackDamage = manager:getAttackDamage(playerPokemon, attack)
 
         enemyPokemon = playerPokemon:atacar(enemyPokemon, attack)
         print("[PokeBattle] Voce usou " .. attackUsed .. " e causou " .. attackDamage .. " dano!")
@@ -95,16 +97,14 @@ function game:fighting(playerPokemon, enemyPokemon)
             stringUtils:generateWindow(true, playerPokemon, enemyPokemon)
 
             local attack = math.random(1, 3)
-            local attackUsed = enemyPokemon:getAttackName(attack)
-            local attackDamage = enemyPokemon:getAttackDamage(attack)
+            local attackUsed = manager:getAttackName(enemyPokemon, attack)
+            local attackDamage = manager:getAttackDamage(enemyPokemon, attack)
             
             playerPokemon = enemyPokemon:atacar(playerPokemon, attack)
             print("[PokeBattle] Amy usou " .. attackUsed .. " e causou " .. attackDamage .. " dano!")
             stringUtils:toNextTime()
-
             playerRound = true;
             goto REBBATLE
-        end
     end
 end
 

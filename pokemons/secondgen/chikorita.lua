@@ -22,26 +22,4 @@ function chikorita:atacar(playerPokemon, ataque)
     end
 end
 
-function chikorita:getAttackName(ataque)
-    if ataque == 1 then
-        return chikorita.primeiro_ataque
-    elseif ataque == 2 then
-        return chikorita.segundo_ataque
-    elseif ataque == 3 then
-        return chikorita.terceiro_ataque
-    end
-    return ""
-end
-
-function chikorita:getAttackDamage(ataque)
-    if ataque == 1 then
-        return chikorita.primeiro_ataque_dano
-    elseif ataque == 2 then
-        return chikorita.segundo_ataque_dano
-    elseif ataque == 3 then
-        return chikorita.terceiro_ataque_dano
-    end
-    return 10
-end
-
 return chikorita

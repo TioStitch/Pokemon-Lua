@@ -22,26 +22,4 @@ function totodile:atacar(playerPokemon, ataque)
     end
 end
 
-function totodile:getAttackName(ataque)
-    if ataque == 1 then
-        return totodile.primeiro_ataque
-    elseif ataque == 2 then
-        return totodile.segundo_ataque
-    elseif ataque == 3 then
-        return totodile.terceiro_ataque
-    end
-    return ""
-end
-
-function totodile:getAttackDamage(ataque)
-    if ataque == 1 then
-        return totodile.primeiro_ataque_dano
-    elseif ataque == 2 then
-        return totodile.segundo_ataque_dano
-    elseif ataque == 3 then
-        return totodile.terceiro_ataque_dano
-    end
-    return 10
-end
-
 return totodile

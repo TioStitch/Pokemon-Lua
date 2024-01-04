@@ -11,10 +11,30 @@ function manager:checkBattle(AMY_PREFIXO, playerPokemon, enemyPokemon)
         print(AMY_PREFIXO .. "Parabens, eu devo treinar mais para te superar!")
         print(AMY_PREFIXO .. "Obrigado por me vencer!")
         return true
-    else
-        return false
     end
     return false
+end
+
+function manager:getAttackName(pokemon, ataque)
+    if ataque == 1 then
+        return pokemon.primeiro_ataque
+    elseif ataque == 2 then
+        return pokemon.segundo_ataque
+    elseif ataque == 3 then
+        return pokemon.terceiro_ataque
+    end
+    return ""
+end
+
+function manager:getAttackDamage(pokemon, ataque)
+    if ataque == 1 then
+        return pokemon.primeiro_ataque_dano
+    elseif ataque == 2 then
+        return pokemon.segundo_ataque_dano
+    elseif ataque == 3 then
+        return pokemon.terceiro_ataque_dano
+    end
+    return 10
 end
 
 return manager
